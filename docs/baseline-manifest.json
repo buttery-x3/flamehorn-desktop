@@ -1,0 +1,301 @@
+{
+  "revision": "1.0",
+  "date": "2026-10-13",
+  "timezone": "Australia/Sydney",
+  "status": "Approved design baseline; final FLAME-145 handoff prompt awaits approval",
+  "repository": "D:/dev/flamehorn-desktop",
+  "remote": null,
+  "sourceArtworkCommit": "c971a92599bbc2e823b11af0de8c5bcc16d3231c",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 44,
+      "sha256": "4d87813142789819e158a739421c09603cd5b15c4b745f54bd33ae51629231fd"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 57,
+      "sha256": "b07ab5692c2d63d92bd83998dbe4b67452a28ddd062ffd7545decae51803ed1d"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 737,
+      "sha256": "6d4fe22278676c53148e634857db383c1cd0814bcf4d4835d8dcea81db036ad8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1014,
+      "sha256": "709c401b0593e020237ab13522c40fd6543a60d6fc1fa84cfb31de4b6b562395"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 2952,
+      "sha256": "48b00bfacf83b04be1fc1f203f6ef9e1fa154c42ec65939d7999855935f82674"
+    },
+    {
+      "path": "docs/agent-brief-mvp.md",
+      "bytes": 23211,
+      "sha256": "1378412d7191c759e861d1db2dcc4db212ed567bcfa0dce24a79c921c4b8ed39"
+    },
+    {
+      "path": "docs/design/application-providers.md",
+      "bytes": 36228,
+      "sha256": "feef9336dfec0dae2f75b67203a9be49a8556164d50a0b73b93b98eda2fd1b6d"
+    },
+    {
+      "path": "docs/design/context-compilation.md",
+      "bytes": 39368,
+      "sha256": "0317fa5cba75eccd6c45d29e6a55abcf6f5eba19e383dadd1986d62ef27d4681"
+    },
+    {
+      "path": "docs/design/desktop-interaction.md",
+      "bytes": 17110,
+      "sha256": "8ba25a908882ab888dd08722766b1b93d1a6f8886ffbd0b09163a1512fcb270e"
+    },
+    {
+      "path": "docs/design/mockups/README.md",
+      "bytes": 7800,
+      "sha256": "b373dfe10036b4d78537f9228f1118747c0cbe7bdb5dd13a4292ecdfcf07d04a"
+    },
+    {
+      "path": "docs/design/mockups/art/a3-dark.svg",
+      "bytes": 27183,
+      "sha256": "d6ce67f9b5c4d9f79a08262c118d7f8e532ec176628e095fde0594fceef1a49a"
+    },
+    {
+      "path": "docs/design/mockups/art/a3-light.svg",
+      "bytes": 27147,
+      "sha256": "952ffd40bf88c0cf37aadaf6c252ffd081cb77b2448b18c523e74eaf44c78f20"
+    },
+    {
+      "path": "docs/design/mockups/art/b1-dark.svg",
+      "bytes": 5918,
+      "sha256": "942171c78820420785d986895a70e0c8f6a3fb48b2ecdfe2856ebfb1bf1035d3"
+    },
+    {
+      "path": "docs/design/mockups/art/b1-light.svg",
+      "bytes": 5912,
+      "sha256": "a3344c88f3de2c8c1e726da987bf8605b98d136f0d7897cbe7fc075018110f98"
+    },
+    {
+      "path": "docs/design/mockups/art/b2-dark.svg",
+      "bytes": 6713,
+      "sha256": "bdf20a81433e31dc9d4d74bbb250f7cd334fda687c9b7478f6fffabeff622396"
+    },
+    {
+      "path": "docs/design/mockups/art/b2-light.svg",
+      "bytes": 6710,
+      "sha256": "cb73da8ae43dd5ab80e893bdc2a93a8141410ba9474082ffef5c26b47aa8a9a0"
+    },
+    {
+      "path": "docs/design/mockups/art/b3-dark.svg",
+      "bytes": 6993,
+      "sha256": "6609c2428885911cf8bec7c03657ca4e7fd5ae75d9c09baeadf9dbf1e02419ff"
+    },
+    {
+      "path": "docs/design/mockups/art/b3-light.svg",
+      "bytes": 6987,
+      "sha256": "38a645d199a9a2fc6095dbe34d52510eb886827ddd990822ad036f6eaf8e34fe"
+    },
+    {
+      "path": "docs/design/mockups/art/b4-dark.svg",
+      "bytes": 7975,
+      "sha256": "9c9fc5be221ea5025483da0b8e5a1856953f5fbe003fb42f61abc464e12c5966"
+    },
+    {
+      "path": "docs/design/mockups/art/b4-light.svg",
+      "bytes": 7969,
+      "sha256": "cf833cd67559fec19acc3ed65dc6c6cd8a69bc65565ee4afa8721dd094cc65d4"
+    },
+    {
+      "path": "docs/design/mockups/art/b5-dark.svg",
+      "bytes": 7692,
+      "sha256": "445f04ad7256801efa0c90f4d77b81fcc12f52c94667521900d7071ad47980a3"
+    },
+    {
+      "path": "docs/design/mockups/art/b5-light.svg",
+      "bytes": 7686,
+      "sha256": "6c9b46b4f43d3a1b1e704878fc039a04b9d04eb95c6319bb622dd90c5d778fee"
+    },
+    {
+      "path": "docs/design/mockups/art/b6-dark.svg",
+      "bytes": 9447,
+      "sha256": "b39a131f38624ff61db0f12255ea0bdbfb92686e9cc4e0e91dfede09ff2967d1"
+    },
+    {
+      "path": "docs/design/mockups/art/b6-light.svg",
+      "bytes": 9438,
+      "sha256": "8e60e0ed203af5922f70afa731378626fb7eb1b25541fc87456ce57265b380f2"
+    },
+    {
+      "path": "docs/design/mockups/art/b7-dark.svg",
+      "bytes": 8021,
+      "sha256": "29b90d8bffbbe8af8092e706edc9e018bbf48d56fc338b24bb17d15f24d9003d"
+    },
+    {
+      "path": "docs/design/mockups/art/b7-light.svg",
+      "bytes": 8015,
+      "sha256": "85050ede5cb7080cd36af76b2eccef7b4a6c0f55d556818c734f6da95cc6185a"
+    },
+    {
+      "path": "docs/design/mockups/art/c1-dark.svg",
+      "bytes": 13563,
+      "sha256": "b667065f4c680eda2e8a1240c535c7e74597e647b075bd3f28714a00178dd876"
+    },
+    {
+      "path": "docs/design/mockups/art/c1-light.svg",
+      "bytes": 13554,
+      "sha256": "335eed286601f955ecb781fc93de16d5a70fc5170cc6c054dc143292df5df4b3"
+    },
+    {
+      "path": "docs/design/mockups/art/c2-dark.svg",
+      "bytes": 14755,
+      "sha256": "dace30bb8891ff13205771832e23aec293438d5941a0c5ce5c75fb1e943c3324"
+    },
+    {
+      "path": "docs/design/mockups/art/c2-light.svg",
+      "bytes": 14746,
+      "sha256": "5258c9572d489a603a96984f02e5678157c08faf07659f20e56667789a5eb8e2"
+    },
+    {
+      "path": "docs/design/mockups/art/c3-dark.svg",
+      "bytes": 13255,
+      "sha256": "b17427d2409c6b6f8a8e200ee299c7801021c9ca3cec5aca7d6000f29a88deac"
+    },
+    {
+      "path": "docs/design/mockups/art/c3-light.svg",
+      "bytes": 13246,
+      "sha256": "421996c5fe5853d3802f00421d7d8884da8af3eb570f14a809acf7dd7712e298"
+    },
+    {
+      "path": "docs/design/mockups/art/c4-dark.svg",
+      "bytes": 13767,
+      "sha256": "f837218ad160186bedc163bae5e7fe6a855abe7dff792f2642a00058cf5f9a97"
+    },
+    {
+      "path": "docs/design/mockups/art/c4-light.svg",
+      "bytes": 13758,
+      "sha256": "2904bb8764e0d341b6bf7a2e17fb12de9362861091c9226dfe53684ad1bb7957"
+    },
+    {
+      "path": "docs/design/mockups/art/d1-dark.svg",
+      "bytes": 13170,
+      "sha256": "df91827a5595980a3b27b59f8036c81f48d6c31bf7130c645e65ccf7b5971f14"
+    },
+    {
+      "path": "docs/design/mockups/art/d1-light.svg",
+      "bytes": 13152,
+      "sha256": "98f75cd47eb39ad4b831347337fa46bbf920ea87c69665f419796009cc94d342"
+    },
+    {
+      "path": "docs/design/mockups/art/d2-dark.svg",
+      "bytes": 14413,
+      "sha256": "8c7622c056cc8bfd93cfd226c0ef9cfec63a4cfa2adbe2a6301c44a4a1238265"
+    },
+    {
+      "path": "docs/design/mockups/art/d2-light.svg",
+      "bytes": 14401,
+      "sha256": "b14e8627c058f11605b22b5b37ad3fffb050512a9e399938c2f6bd565101019d"
+    },
+    {
+      "path": "docs/design/mockups/art/d3-dark.svg",
+      "bytes": 8755,
+      "sha256": "2ce5931881f37340c2a7c7e5a22ea867fd09507ea2120aa42dbb45d8d61769ed"
+    },
+    {
+      "path": "docs/design/mockups/art/d3-light.svg",
+      "bytes": 8749,
+      "sha256": "3bf45258704627eee1a7eaf466975226e258ff4fb604397138b1f1a566c5d5f5"
+    },
+    {
+      "path": "docs/design/mockups/art/w1-dark.svg",
+      "bytes": 18751,
+      "sha256": "d5df64bdf4963a2c27308e6f2e8c90da7466c75ee07fb37371caf58cc40e262c"
+    },
+    {
+      "path": "docs/design/mockups/art/w1-light.svg",
+      "bytes": 18734,
+      "sha256": "5ed84b5e1935ec138c2837581065d4912ec6ceac6e2588052b809e812f47074e"
+    },
+    {
+      "path": "docs/design/mockups/art/w2-dark.svg",
+      "bytes": 26809,
+      "sha256": "d2d8aa7f9c8f4e4613a52e155e3c99800aa094c9cfe3f8b5f8e99e94a3239296"
+    },
+    {
+      "path": "docs/design/mockups/art/w2-light.svg",
+      "bytes": 26804,
+      "sha256": "88afafeb640e4fc310db6efa1405dd1ab9dd0811cc055f7dd398ee76387f9eda"
+    },
+    {
+      "path": "docs/design/mockups/art/w3-dark.svg",
+      "bytes": 13929,
+      "sha256": "b170054f597f7c42446f6295d469e9d938ea968b3e8368f9d0b05c755135ac8f"
+    },
+    {
+      "path": "docs/design/mockups/art/w3-light.svg",
+      "bytes": 13921,
+      "sha256": "12002cbe1721cd99a99449ca96a46d090d1316d67a238f749639adb914cfb62d"
+    },
+    {
+      "path": "docs/design/mockups/art/w4-dark.svg",
+      "bytes": 9938,
+      "sha256": "49a5740bf0c9b88e8ab97530b847eb1e4cb7061f04b3e288475ddb56446503fe"
+    },
+    {
+      "path": "docs/design/mockups/art/w4-light.svg",
+      "bytes": 9926,
+      "sha256": "980690dd3ae293a7c3be741d649a3e54bb0eb35970c5a3ada39827d2d575e30b"
+    },
+    {
+      "path": "docs/design/mockups/asset-manifest.json",
+      "bytes": 9180,
+      "sha256": "8aa5392f9d8b16d50bf65ba21635b5f304c9b291c99eb9e40e57a1e63abff301"
+    },
+    {
+      "path": "docs/design/mockups/index.html",
+      "bytes": 14074,
+      "sha256": "38b4b94203f7bcdc51ca092dfe901c16d754bfd9c2ad75e4a63a4098ff9dffc6"
+    },
+    {
+      "path": "docs/design/mockups/pack.source.json",
+      "bytes": 10721,
+      "sha256": "736f5dd27294975288cbc34271283e0c0b7f501ebd919bb3a3e501fa8ff4fbce"
+    },
+    {
+      "path": "docs/design/mockups/zoom-geometry.json",
+      "bytes": 7305,
+      "sha256": "a6c76091ceab39c65eba101ff4880becd5fa5df74fea8063a2e97910a66b5345"
+    },
+    {
+      "path": "docs/design/nodes-pins-processes.md",
+      "bytes": 62340,
+      "sha256": "53c16b85ca77cbcda792824e3a5b403f1fb77ce32e4806b763fe371deb8815b6"
+    },
+    {
+      "path": "docs/design/persistence-assets.md",
+      "bytes": 36301,
+      "sha256": "fc4070ea3bbb68518756092f69e76e10edd7cf6e2fea70c9aa8860c72a55cd7f"
+    },
+    {
+      "path": "docs/design/process-runtime.md",
+      "bytes": 29072,
+      "sha256": "0f328542f3b766ea6da1fd56a8e2092e35952e289036cff9d4e807a1f2ff7309"
+    },
+    {
+      "path": "docs/design/reconciliation-audit.md",
+      "bytes": 4906,
+      "sha256": "b10ecc6a0382968a2d6069f7f12c45fb1cd47572e2d86c158232317003ae2347"
+    },
+    {
+      "path": "docs/design/superseded/desktop-interaction-v0.1.md",
+      "bytes": 21459,
+      "sha256": "6f6a1c9208d1961403b5f93c13a78d215d427f83b6688647fbb1eae6d21a5a35"
+    },
+    {
+      "path": "docs/design/superseded/project-overview-before-2026-10-13.md",
+      "bytes": 10394,
+      "sha256": "4bb3c339d083cc01aa14fa520828da559adce36d3e975c32c400852ae3b8882e"
+    }
+  ]
+}

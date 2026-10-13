@@ -1,0 +1,424 @@
+{
+  "world_nodes": {
+    "U1": {
+      "kind": "context",
+      "x": 100,
+      "y": 120,
+      "w": 260,
+      "h": 170,
+      "title": "U1 \u00b7 User",
+      "version": "1/1",
+      "body": "Why do abandoned places feel full of stories?\n\nStart with the emotional feeling, then look at the objects we leave behind."
+    },
+    "P1": {
+      "kind": "process",
+      "x": 470,
+      "y": 150,
+      "w": 220,
+      "h": 150,
+      "title": "Respond"
+    },
+    "M4": {
+      "kind": "context",
+      "x": 790,
+      "y": 100,
+      "w": 300,
+      "h": 220,
+      "title": "M4 \u00b7 Model",
+      "version": "1/1",
+      "body": "An abandoned place leaves evidence without explanation. A cup on a sill suggests a habit; an empty doorway suggests a departure. We supply the missing people and the events between those traces. The incompleteness invites us to become storytellers."
+    },
+    "U2": {
+      "kind": "context",
+      "x": 790,
+      "y": 390,
+      "w": 300,
+      "h": 140,
+      "title": "U2 \u00b7 User",
+      "version": "1/1",
+      "body": "Could the absence feel hopeful instead of sad?"
+    },
+    "F1": {
+      "kind": "reference",
+      "x": 100,
+      "y": 390,
+      "w": 260,
+      "h": 110,
+      "title": "F1 station.png",
+      "body": "Empty station platform. Image reference.",
+      "checked": false
+    },
+    "F2": {
+      "kind": "reference",
+      "x": 430,
+      "y": 430,
+      "w": 240,
+      "h": 110,
+      "title": "F2 field-notes.txt",
+      "body": "A bench worn smooth by years of waiting.",
+      "checked": false
+    },
+    "F3": {
+      "kind": "reference",
+      "x": 1190,
+      "y": 130,
+      "w": 230,
+      "h": 140,
+      "title": "F3 building-notes.txt",
+      "body": "Loose reference. Not wired; attachment unchecked.",
+      "checked": false
+    }
+  },
+  "edges": [
+    [
+      "U1",
+      "P1",
+      [
+        [
+          360,
+          167
+        ],
+        [
+          412,
+          167
+        ],
+        [
+          418,
+          213
+        ],
+        [
+          470,
+          213
+        ]
+      ]
+    ],
+    [
+      "F1",
+      "P1",
+      [
+        [
+          360,
+          437
+        ],
+        [
+          428,
+          437
+        ],
+        [
+          428,
+          252
+        ],
+        [
+          470,
+          252
+        ]
+      ]
+    ],
+    [
+      "P1",
+      "M4",
+      [
+        [
+          690,
+          213
+        ],
+        [
+          740,
+          213
+        ],
+        [
+          740,
+          147
+        ],
+        [
+          790,
+          147
+        ]
+      ]
+    ],
+    [
+      "M4",
+      "U2",
+      [
+        [
+          1090,
+          147
+        ],
+        [
+          1144,
+          147
+        ],
+        [
+          1144,
+          350
+        ],
+        [
+          769,
+          350
+        ],
+        [
+          769,
+          437
+        ],
+        [
+          790,
+          437
+        ]
+      ]
+    ]
+  ],
+  "views": [
+    {
+      "zoom": 0.65,
+      "window": [
+        26,
+        82,
+        1308,
+        550
+      ],
+      "viewport": [
+        38,
+        138,
+        1284,
+        482
+      ],
+      "camera_center": [
+        600,
+        300
+      ],
+      "nodes": {
+        "U1": {
+          "world": [
+            100,
+            120,
+            260,
+            170
+          ],
+          "screen": [
+            355.0,
+            262.0,
+            169.0,
+            110.5
+          ],
+          "content_font_px": 13
+        },
+        "P1": {
+          "world": [
+            470,
+            150,
+            220,
+            150
+          ],
+          "screen": [
+            595.5,
+            281.5,
+            143.0,
+            97.5
+          ],
+          "content_font_px": null
+        },
+        "M4": {
+          "world": [
+            790,
+            100,
+            300,
+            220
+          ],
+          "screen": [
+            803.5,
+            249.0,
+            195.0,
+            143.0
+          ],
+          "content_font_px": 13
+        },
+        "U2": {
+          "world": [
+            790,
+            390,
+            300,
+            140
+          ],
+          "screen": [
+            803.5,
+            437.5,
+            195.0,
+            91.0
+          ],
+          "content_font_px": 13
+        },
+        "F1": {
+          "world": [
+            100,
+            390,
+            260,
+            110
+          ],
+          "screen": [
+            355.0,
+            437.5,
+            169.0,
+            71.5
+          ],
+          "content_font_px": null
+        },
+        "F2": {
+          "world": [
+            430,
+            430,
+            240,
+            110
+          ],
+          "screen": [
+            569.5,
+            463.5,
+            156.0,
+            71.5
+          ],
+          "content_font_px": null
+        },
+        "F3": {
+          "world": [
+            1190,
+            130,
+            230,
+            140
+          ],
+          "screen": [
+            1063.5,
+            268.5,
+            149.5,
+            91.0
+          ],
+          "content_font_px": null
+        }
+      }
+    },
+    {
+      "zoom": 1.0,
+      "window": [
+        26,
+        716,
+        1308,
+        550
+      ],
+      "viewport": [
+        38,
+        772,
+        1284,
+        482
+      ],
+      "camera_center": [
+        600,
+        300
+      ],
+      "nodes": {
+        "U1": {
+          "world": [
+            100,
+            120,
+            260,
+            170
+          ],
+          "screen": [
+            180.0,
+            833.0,
+            260.0,
+            170.0
+          ],
+          "content_font_px": 13
+        },
+        "P1": {
+          "world": [
+            470,
+            150,
+            220,
+            150
+          ],
+          "screen": [
+            550.0,
+            863.0,
+            220.0,
+            150.0
+          ],
+          "content_font_px": null
+        },
+        "M4": {
+          "world": [
+            790,
+            100,
+            300,
+            220
+          ],
+          "screen": [
+            870.0,
+            813.0,
+            300.0,
+            220.0
+          ],
+          "content_font_px": 13
+        },
+        "U2": {
+          "world": [
+            790,
+            390,
+            300,
+            140
+          ],
+          "screen": [
+            870.0,
+            1103.0,
+            300.0,
+            140.0
+          ],
+          "content_font_px": 13
+        },
+        "F1": {
+          "world": [
+            100,
+            390,
+            260,
+            110
+          ],
+          "screen": [
+            180.0,
+            1103.0,
+            260.0,
+            110.0
+          ],
+          "content_font_px": null
+        },
+        "F2": {
+          "world": [
+            430,
+            430,
+            240,
+            110
+          ],
+          "screen": [
+            510.0,
+            1143.0,
+            240.0,
+            110.0
+          ],
+          "content_font_px": null
+        },
+        "F3": {
+          "world": [
+            1190,
+            130,
+            230,
+            140
+          ],
+          "screen": [
+            1270.0,
+            843.0,
+            230.0,
+            140.0
+          ],
+          "content_font_px": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "sheet": "A",
+    "id": "A1",
+    "title": "Desktop & reading",
+    "caption": "The accepted spatial direction, with the current compact, cleaner workbench treatment. Preserves W1.",
+    "notes": [
+      "Active Workspace, collapsed exploration, unchecked reference nodes, edge creation controls and navigation dock coexist. Grouping, proximity and collapse never change input inclusion.",
+      "Reference nodes expose attachment checkboxes and output pins. Their attachment scope is still open; unchecked and unwired examples leave the illustrated run unchanged. The inspector still reads the selected Context at any zoom.",
+      "Square Contexts, rounded-rectangle Processes, unboxed idle persona/tone controls and colored square pins follow the latest visual feedback."
+    ],
+    "art": "w1",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "A",
+    "id": "A3",
+    "title": "Semantic zoom / two Workspace views",
+    "caption": "Two separate fixed windows show the same connected cluster at 65% and 100% camera zoom.",
+    "notes": [
+      "All nodes, pin anchors, wires and gaps use the same camera transform; no node is resized independently. The world positions, selected versions and attachment states are unchanged.",
+      "Context text is 13 px in both views. At the closer zoom, M4 has more screen space and reveals more of the same retained text. This is presentation, not a new summary or run.",
+      "The outer windows and chrome are identical. More of the surroundings fit at 65%; the 100% camera crops peripheral nodes. Exact zoom thresholds remain Draft."
+    ],
+    "art": "a3",
+    "w": 1360,
+    "h": 1370
+  },
+  {
+    "sheet": "B",
+    "id": "B1",
+    "title": "Source-pin creation palette",
+    "caption": "Choose Respond after dragging U1\u2019s output into empty space.",
+    "notes": [
+      "The palette appears at the drop location. Choosing Respond creates only the Process and its input connection.",
+      "No output destination and no inference are silently created.",
+      "Respond, Continue, Explode and Challenge use the working vocabulary; the final MVP set remains open."
+    ],
+    "art": "b1",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B2",
+    "title": "Process without output",
+    "caption": "Run is unavailable because Respond still needs a destination.",
+    "notes": [
+      "The nearby explanation makes the disabled state actionable.",
+      "Run belongs to the Process, not the Context.",
+      "None is selected for the example; new-Process defaults are still unresolved."
+    ],
+    "art": "b2",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B3",
+    "title": "Destination creation palette",
+    "caption": "A separate drag from Respond\u2019s output creates Model Context.",
+    "notes": [
+      "This explicitly separates choosing an action from choosing its destination.",
+      "The empty target is not a prompt-intention node.",
+      "Creating or wiring objects never starts inference."
+    ],
+    "art": "b3",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B4",
+    "title": "Configured, not run",
+    "caption": "The connected Model Context is awaiting its first run.",
+    "notes": [
+      "The missing version marker and explicit pending wording distinguish it from a completed empty answer.",
+      "The user presses Run on Respond to resolve current inputs/settings and fill M4.",
+      "One execution completes its work and then waits."
+    ],
+    "art": "b4",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B5",
+    "title": "Running",
+    "caption": "One active Process, one pending output.",
+    "notes": [
+      "This is a static state illustration, not a live request.",
+      "Streaming presentation, cancellation and detailed progress behaviour remain undecided.",
+      "No downstream Process runs automatically."
+    ],
+    "art": "b5",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B6",
+    "title": "Completed & continued",
+    "caption": "A completed reply leads directly to user-authored continuation.",
+    "notes": [
+      "Context \u2192 Process supplies material; Process \u2192 Model Context chooses the destination.",
+      "Model Context \u2192 User Context contributes ancestry without invoking a model.",
+      "A subsequent Respond handles the next generated reply after explicit configuration and Run."
+    ],
+    "art": "b6",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "B",
+    "id": "B7",
+    "title": "Failed first run",
+    "caption": "The Process failed; the destination has no completed version.",
+    "notes": [
+      "A failed request is not a successful empty response.",
+      "Retry, cancellation, partial-result retention and failure/version consequences remain open.",
+      "No working Retry/Cancel behaviour is invented here."
+    ],
+    "art": "b7",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "C",
+    "id": "C1",
+    "title": "Current Process configuration",
+    "caption": "Inspect everyday modifiers and expanded Advanced instruction settings for the next request.",
+    "notes": [
+      "Changing the persona alone does not regenerate M4.",
+      "The current Process instruction is not the entire compiled request; resolved context and other applicable instructions also contribute.",
+      "Instruction editing is in the right inspector\u2019s Advanced settings, not on the Process canvas node. The generic default uses supplied context instead of repeating the User Context topic."
+    ],
+    "art": "c1",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "C",
+    "id": "C2",
+    "title": "Full Context reading",
+    "caption": "The selected Context version is readable without leaving the surface.",
+    "notes": [
+      "M4 owns its content version; P1 owns persona and Run.",
+      "Selection for reading does not change another Process\u2019s inputs.",
+      "Generation information is separate from content; private reasoning is not promised."
+    ],
+    "art": "c2",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "C",
+    "id": "C3",
+    "title": "Rerun \u2192 version 2",
+    "caption": "An explicit rerun creates another output version.",
+    "notes": [
+      "Gambling Cowboy generates the illustrative M4 version 2. Version 1 stays available.",
+      "The Process remains editable and unversioned. Run records snapshot actual instruction and modifier values.",
+      "No descendants are rewritten or run automatically."
+    ],
+    "art": "c3",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "C",
+    "id": "C4",
+    "title": "Selected content vs history",
+    "caption": "Old output selected while source and Process now show newer choices.",
+    "notes": [
+      "R1 retains ordered input reference U1 v1, although U1 currently displays v2.",
+      "M4 v1 does not reset current P1\u2019s Cowboy persona. It is selected for a later run only if that node is explicitly included.",
+      "Historical records use retained references, not duplicate transcripts. Later or separate material requires deliberate addition; ordering/exclusion/conflict UX remains open."
+    ],
+    "art": "c4",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "D",
+    "id": "D1",
+    "title": "Explode into four outputs",
+    "caption": "One Process populates four destinations in a busy Workspace.",
+    "notes": [
+      "All four results are ordinary Model Contexts. Internal direction selection and provider calls do not appear as prompt nodes or extra user steps.",
+      "One Run fills all targets and stops. No downstream automatic execution.",
+      "Output-count control, count mismatches and partial failures remain open."
+    ],
+    "art": "d1",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "D",
+    "id": "D2",
+    "title": "New Workspace from Here",
+    "caption": "Choose M4 version 1 and extract its actual contributing history.",
+    "notes": [
+      "The first extraction uses the simple Respond result; the separate Explode branch did not contribute to it.",
+      "Follow the historical record, not today\u2019s connections/settings or the whole current Workspace.",
+      "Unused multi-output siblings and multiple historical versions of one source remain unresolved."
+    ],
+    "art": "d2",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "D",
+    "id": "D3",
+    "title": "A smaller independent branch",
+    "caption": "Retained content and historical Process settings, opened without a run.",
+    "notes": [
+      "Independently editable objects may share immutable stored content. Source selections and objects remain unchanged.",
+      "No summary request or automatic Process execution occurs. Unrelated branches, old positioning and folders are not promised.",
+      "Permanently purged material must be disclosed rather than replaced by newer content."
+    ],
+    "art": "d3",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "E",
+    "id": "W2",
+    "title": "Node detail & persona picker",
+    "caption": "Preserved extra: compact open persona menu and detailed node anatomy.",
+    "notes": [
+      "27 px filter, 23 px rows and an unboxed emoji trigger. Idle tone is also unboxed.",
+      "Context text keeps its light border. The Process canvas shows everyday controls only; instructions are Advanced inspector settings.",
+      "Persona changes configure the next run. The connected M4 destination is outside this detail view."
+    ],
+    "art": "w2",
+    "w": 1220,
+    "h": 720
+  },
+  {
+    "sheet": "E",
+    "id": "W3",
+    "title": "Multi-input Merge",
+    "caption": "Preserved extra: two Contexts, distinct input pins, one Process and target.",
+    "notes": [
+      "Two sources connect visibly to one Merge. Sources and retained versions are listed.",
+      "The target is pending; one explicit Run fills it and stops.",
+      "Merge is a visual example, not a final MVP commitment. Detailed context-order policy remains open."
+    ],
+    "art": "w3",
+    "w": 1360,
+    "h": 830
+  },
+  {
+    "sheet": "E",
+    "id": "W4",
+    "title": "Reference nodes & inclusion",
+    "caption": "Files and images are nodes, with attachment selection separate from direct Process wiring.",
+    "notes": [
+      "An unchecked image reference is explicitly wired into Respond. A checked text reference illustrates attachment selection without a wire.",
+      "The checkbox says Include as context attachment. No global inclusion scope is assumed. The checkbox does not create or remove Process connections.",
+      "Exact attachment target scope, overlap or deduplication with wired input, and interaction details remain open. Proximity, grouping and collapse never silently include material."
+    ],
+    "art": "w4",
+    "w": 1360,
+    "h": 830
+  }
+]
