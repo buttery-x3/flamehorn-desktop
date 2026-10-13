@@ -5,3 +5,12 @@ dist/
 .env.*
 !.env.example
 *.log
+test-results/
+artifacts/
+*.flamehorn
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+protected.bin*
+host-id
+.vite/
