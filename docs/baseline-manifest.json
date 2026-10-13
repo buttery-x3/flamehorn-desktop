@@ -1,10 +1,10 @@
 {
-  "revision": "1.0",
+  "revision": "1.1",
   "date": "2026-10-13",
   "timezone": "Australia/Sydney",
-  "status": "Approved design baseline; final FLAME-145 handoff prompt awaits approval",
+  "status": "Approved design and user-requested repository contract; final FLAME-145 launch prompt awaits approval",
   "repository": "D:/dev/flamehorn-desktop",
-  "remote": null,
+  "remote": "https://github.com/buttery-x3/flamehorn-desktop.git",
   "sourceArtworkCommit": "c971a92599bbc2e823b11af0de8c5bcc16d3231c",
   "files": [
     {
@@ -13,29 +13,34 @@
       "sha256": "4d87813142789819e158a739421c09603cd5b15c4b745f54bd33ae51629231fd"
     },
     {
+      "path": ".github/pull_request_template.md",
+      "bytes": 1228,
+      "sha256": "b3fb37c93f294296e4f53599245e0151f04e2bf4a70d7ba83acc3fa1c99f6024"
+    },
+    {
       "path": ".gitignore",
       "bytes": 57,
       "sha256": "b07ab5692c2d63d92bd83998dbe4b67452a28ddd062ffd7545decae51803ed1d"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 737,
-      "sha256": "6d4fe22278676c53148e634857db383c1cd0814bcf4d4835d8dcea81db036ad8"
+      "bytes": 1591,
+      "sha256": "f5d5a9b1b7eee8fd253fe4718ded8b4755ad10341fc7eff1e16c55beb315e239"
     },
     {
       "path": "README.md",
-      "bytes": 1014,
-      "sha256": "709c401b0593e020237ab13522c40fd6543a60d6fc1fa84cfb31de4b6b562395"
+      "bytes": 1664,
+      "sha256": "2d139c51326d1198dbd7ee36190c79d70642bb7014ee3971ed05b087730e2fa0"
     },
     {
       "path": "docs/README.md",
-      "bytes": 2952,
-      "sha256": "48b00bfacf83b04be1fc1f203f6ef9e1fa154c42ec65939d7999855935f82674"
+      "bytes": 3299,
+      "sha256": "79fc7e387f10707741ff3e4c1790d3067367bd5cb282b7ad478c5a1f28f83d43"
     },
     {
       "path": "docs/agent-brief-mvp.md",
-      "bytes": 23211,
-      "sha256": "1378412d7191c759e861d1db2dcc4db212ed567bcfa0dce24a79c921c4b8ed39"
+      "bytes": 26129,
+      "sha256": "40bafb871dba966e4d55242254df53dd514c20c7528d0c0b7b1b25f7375e16c2"
     },
     {
       "path": "docs/design/application-providers.md",
@@ -284,8 +289,8 @@
     },
     {
       "path": "docs/design/reconciliation-audit.md",
-      "bytes": 4906,
-      "sha256": "b10ecc6a0382968a2d6069f7f12c45fb1cd47572e2d86c158232317003ae2347"
+      "bytes": 5218,
+      "sha256": "aa9d46d65c3752507a028e3e651b68b44592f0cf42cd35407830713b30f2fe63"
     },
     {
       "path": "docs/design/superseded/desktop-interaction-v0.1.md",
@@ -296,6 +301,21 @@
       "path": "docs/design/superseded/project-overview-before-2026-10-13.md",
       "bytes": 10394,
       "sha256": "4bb3c339d083cc01aa14fa520828da559adce36d3e975c32c400852ae3b8882e"
+    },
+    {
+      "path": "docs/repo-development-contract.md",
+      "bytes": 14168,
+      "sha256": "a27a9480e522b8b045d4713eb59035c09c6643d450d45223ef8c2fdfa17a9dc0"
+    },
+    {
+      "path": "docs/testing/README.md",
+      "bytes": 1426,
+      "sha256": "e4e3feacdd9feab8bccbc6d98e16270954e6886786f1b6f9a52fa70905f66055"
+    },
+    {
+      "path": "docs/testing/TEMPLATE.md",
+      "bytes": 2784,
+      "sha256": "67898dac1f797b6d1a06f8d7dba524929ad3597faae63d8fb018d1619eb0d5ac"
     }
   ]
 }

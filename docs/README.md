@@ -4,9 +4,13 @@ Start with [MVP Implementation Brief and Handoff](agent-brief-mvp.md). It contai
 
 **Canonical local repository:** `D:\dev\flamehorn-desktop`
 
+**Remote:** [buttery-x3/flamehorn-desktop](https://github.com/buttery-x3/flamehorn-desktop) · current preparation on development; main stays at the original documentation baseline.
+
 **Linear review:** [MVP Implementation Brief and Handoff](https://linear.app/flamehorn-games/document/mvp-implementation-brief-and-handoff-a5ec8958adc5)
 
 **Baseline:** [file hashes](baseline-manifest.json) · [reconciliation audit](design/reconciliation-audit.md)
+
+**Repository workflow:** [development contract](repo-development-contract.md) · [testing updates](testing/README.md) · [test-note template](testing/TEMPLATE.md)
 
 | Owning specification | Revision | Linear mirror |
 | --- | --- | --- |
