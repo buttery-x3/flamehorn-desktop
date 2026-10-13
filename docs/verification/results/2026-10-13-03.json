@@ -1,0 +1,160 @@
+{
+  "candidate": "2026-10-13-03",
+  "runtimeSource": "d818295a1d2e3e05465c78d6b47717320855c2ae",
+  "environment": {
+    "os": "Windows 11 Pro x64 10.0.26300",
+    "node": "24.15.0",
+    "npm": "11.12.1",
+    "electron": "44.7.0"
+  },
+  "unit": {
+    "passed": 68,
+    "files": 7
+  },
+  "typecheck": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "desktop": {
+    "checks": [
+      "create, edit, autosave with native SQLite",
+      "create Process and connect actual pins with pointer drag",
+      "same scene at 100% and 70%: geometry scales, screen text size and manifest stay stable",
+      "configuration and metadata discovery do not infer",
+      "explicit preview/Run, Responses HTTP stream and committed output",
+      "native Windows protected key stays outside library and explicit removal clears it",
+      "Chat Completions HTTP stream and role-preserving payload",
+      "reopen with history; older-version edits leave retained content immutable",
+      "managed attachment import and safe full-text inspection",
+      "native packaged PDF worker, retained fonts and safe rendered preview",
+      "historical extraction creates a separate Workspace without inference",
+      "malicious Markdown cannot retain active HTML, remote image URLs or executable links",
+      "second clean launch restores versions, attachments, extraction and durable runs",
+      "pending browser consent permits offline editing and close guard preserves its callback listener"
+    ],
+    "errors": [],
+    "requests": [
+      {
+        "path": "/v1/responses",
+        "model": "synthetic-fixture"
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "synthetic-fixture"
+      }
+    ]
+  },
+  "gallery": {
+    "checks": [
+      "Explode 8 stable destinations",
+      "3 durable results survive Stop",
+      "5 unfinished calls recovered from accepted plan",
+      "completed slots not resent",
+      "slot 6 extraction omits 7 siblings",
+      "no inference during extraction"
+    ],
+    "calls": 10,
+    "errors": []
+  },
+  "ordinaryLaunch": {
+    "starts": 2,
+    "debuggerFlags": [],
+    "freshLibraryInitialized": true,
+    "sameLibrarySurvivedForcedRestart": true
+  },
+  "live": {
+    "localServer": "LM Studio 0.4.14-beta+1",
+    "localMetadata": {
+      "id": "gemma4-12b-qat-uncensored-hauhaucs-balanced",
+      "object": "model",
+      "type": "vlm",
+      "publisher": "HauhauCS",
+      "arch": "gemma4",
+      "compatibility_type": "gguf",
+      "quantization": "Q4_K_M",
+      "state": "loaded",
+      "max_context_length": 262144,
+      "loaded_context_length": 20319,
+      "capabilities": [
+        "tool_use"
+      ]
+    },
+    "local": [
+      {
+        "mode": "responses",
+        "model": "gemma4-12b-qat-uncensored-hauhaucs-balanced",
+        "state": "Completed",
+        "elapsedMs": 1556,
+        "calls": 1,
+        "output": "FLAMEHORN_LOCAL_OK",
+        "warnings": [
+          "Endpoint overflow behaviour is unverified; complete-context preservation is not yet verified."
+        ]
+      },
+      {
+        "mode": "chat",
+        "model": "gemma4-12b-qat-uncensored-hauhaucs-balanced",
+        "state": "Completed",
+        "elapsedMs": 1086,
+        "calls": 1,
+        "output": "FLAMEHORN_LOCAL_OK",
+        "warnings": [
+          "Endpoint overflow behaviour is unverified; complete-context preservation is not yet verified."
+        ]
+      }
+    ],
+    "chatgpt": {
+      "model": "gpt-6-luna",
+      "state": "Completed",
+      "planAllowed": true,
+      "calls": 1,
+      "output": "FLAMEHORN_CHATGPT_OK",
+      "warnings": [
+        "Context size is unknown; fit cannot be guaranteed.",
+        "This route has no configured hard output-token cap. Local time and byte ceilings are not a spend cap."
+      ]
+    },
+    "restart": {
+      "checkedAt": "2026-10-13T07:40:14.833Z",
+      "protectedSessionReopened": true,
+      "modelStillListed": true,
+      "additionalInferenceCalls": 0,
+      "results": [
+        {
+          "provider": "compatible",
+          "mode": "responses",
+          "model": "gemma4-12b-qat-uncensored-hauhaucs-balanced",
+          "state": "Completed",
+          "output": "FLAMEHORN_LOCAL_OK"
+        },
+        {
+          "provider": "compatible",
+          "mode": "chat",
+          "model": "gemma4-12b-qat-uncensored-hauhaucs-balanced",
+          "state": "Completed",
+          "output": "FLAMEHORN_LOCAL_OK"
+        },
+        {
+          "provider": "chatgpt",
+          "mode": "responses",
+          "model": "gpt-6-luna",
+          "state": "Completed",
+          "output": "FLAMEHORN_CHATGPT_OK"
+        }
+      ]
+    }
+  },
+  "artifact": {
+    "zipBytes": 195515062,
+    "zipSHA256": "b0ec5233eec50b4d17cc73f6c5892c88bd9cf05d1bb02ca45950db333713e25c",
+    "exeSHA256": "2bad7b7aacce564281f212980c7627ba070a90fb560ac46e2d05a7b9d98ee6d9",
+    "asarSHA256": "177e56e9cc0ef14802d6c0b1b6d18a45fe93564b7da2acb34c85bb78ce235af3"
+  },
+  "remaining": [
+    "Live token expiry/rotation and remote revocation",
+    "Live image/PDF inference",
+    "Local overflow rejection configuration",
+    "Second pristine Windows machine and display scaling",
+    "Exact candidate human acceptance"
+  ]
+}
