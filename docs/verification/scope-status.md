@@ -20,7 +20,7 @@ This table follows every row of the approved brief's scope matrix. “Implemente
 | Files | Implemented managed UTF-8 txt/md, PNG/JPEG/PDF, preview and explicit PDF text representation | Parser/preview/corruption/limits tested; live multimodal inference remains unverified |
 | Storage | Implemented SQLite/assets, save acknowledgements, Undo/Trash/purge, whole-library archives and daily backups | Corruption/ref-integrity/rollback/round-trip fixtures. Schema 1 is first release; unsupported schemas refuse instead of guessing a migration |
 | Extraction | Implemented recorded contributors, roles/settings, independent occurrences, provenance islands and missing-record report | Historical/feedback/draft fixtures; selected multi-output slot copied without siblings or inference |
-| Providers | Implemented ChatGPT authentication and compatible Responses/Chat Completions, per-model profiles, protected storage | Live text passed on both provider paths; live expiry/revocation/files and local overflow policy remain unverified |
+| Providers | Implemented ChatGPT authentication and compatible Responses/Chat Completions, per-model profiles, protected storage | Live text and protected-session restart passed; live expiry/revocation/files and local overflow policy remain unverified |
 | Tools/reasoning | Implemented empty tool capability, recorded returned usage/summaries and profile-specific reasoning | Unsupported tool requests rejected. No raw private reasoning requested; absent usage shown unknown |
 | Future work | Excluded as approved | No Operation Workspaces, schedules, autonomous graphs, reasoning benchmark, or conversation/memory import was introduced |
 
