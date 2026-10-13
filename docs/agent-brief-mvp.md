@@ -1,12 +1,12 @@
 # MVP Implementation Brief and Handoff
 
-**Revision:** 0.1 — ready for final handoff review
+**Revision:** 0.2 — repository development contract added; ready for final handoff review
 
 **Date:** 13 October 2026 (Australia/Sydney)
 
 **Tracking:** [FLAME-145](https://linear.app/flamehorn-games/issue/FLAME-145/design-mvp-implementation-brief-and-agent-handoff-documentation)
 
-**Repository:** `D:\dev\flamehorn-desktop`, local Git repository on `main`. No remote repository is assumed.
+**Repository:** `D:\dev\flamehorn-desktop` · [buttery-x3/flamehorn-desktop](https://github.com/buttery-x3/flamehorn-desktop). Current preparation is integrated on development; main retains the original documentation baseline pending a completed, user-tested and explicitly approved MVP.
 
 **Status:** The user accepted all six draft-design recommendations and requested their completion. This packet records that approved baseline; this new final launch prompt awaits review. Approval of the packet closes preparation only. Implementation requires a later explicit go-ahead.
 
@@ -22,7 +22,7 @@ This repository currently contains documentation and static reference artwork on
 
 ## 2. Pinned reading order and source precedence
 
-Read this brief, then [the documentation index](README.md), the six owning specs below, and [the visual qualification register](design/mockups/README.md). Open full-size panels; do not rely on a thumbnail or the website alone. [baseline-manifest.json](baseline-manifest.json) pins local file hashes.
+Read this brief, the [repository development contract](repo-development-contract.md), then [the documentation index](README.md), the six owning specs below, and [the visual qualification register](design/mockups/README.md). Open full-size panels; do not rely on a thumbnail or the website alone. [baseline-manifest.json](baseline-manifest.json) pins local file hashes.
 
 | Order | Canonical file | Approved revision | Owning issue |
 | --- | --- | --- | --- |
@@ -100,6 +100,14 @@ These are usable paths, not six isolated services or an issue-number waterfall.
 
 Develop across these paths as dependencies permit. Keep compiler, runtime, storage and provider boundaries understandable inside one application; do not introduce separately deployed services or speculative plug-in frameworks. Choose compatible exact dependency pins and commit a lockfile; reviewed library families are not proof of a compatible packaged build.
 
+### Repository workflow and incremental testing
+
+Follow [the repository development contract](repo-development-contract.md) for all changes. Start each coherent feature/fix/documentation change from development on its own branch, review and merge it through a PR into development, then promote only an exact model-reviewed usable development snapshot to testing. A separate review pass records the reviewed SHA, evidence and remaining limitations. Do not develop directly on testing or main.
+
+Promote meaningful usable milestones as implementation progresses, including an early offline editing/save/reopen path when it actually works; do not wait for the whole MVP to provide user-testable progress. Each testing push must include a dated note and newest-first entry in [testing updates](testing/README.md), using the [test-note template](testing/TEMPLATE.md), plus a concise update to the user: what changed, what works, how to start, what to test with expected results, and known gaps. Verify the remote SHA and immutable candidate tag before announcing publication.
+
+Main stays at the original documentation baseline until the complete MVP has been tested and explicitly approved by the user against an exact testing tag/SHA. Model approval, successful tests, design approval and permission to build do not authorise promotion to main. GitHub protection/CI configuration is separate from this written contract and must not be claimed installed.
+
 ## 6. Discipline, discretion and blockers
 
 Allowed small choices: internal module names, schemas implementing the logical contracts, exact dependency versions after compatibility checks, test framework, component boundaries, ordinary error wording, layout collision avoidance, keyboard shortcuts, font fallback and precise semantic-zoom thresholds. Record material choices and verify their effects.
@@ -149,6 +157,7 @@ Suggested implementation evidence home: `docs/verification/`, with an evidence l
 - Visual comparison evidence against the qualified panels, especially A3, versions/history, References and multi-output progress.
 - An implementation status table for every scope row, with remaining defects, blocked live checks and known limitations. Do not label the whole MVP complete while a required path is missing or unverified.
 - Git commit/reference identifying the delivered source and instructions to reproduce the artifact.
+- Reviewed feature/integration history and per-testing-candidate notes covering changes, usable paths, exact setup/tests, limitations and user feedback; explicit human approval evidence before any main promotion.
 
 A signed public release, purchased signing identity or remote deployment is not authorised by this packet. An unsigned internal review build must be labelled honestly.
 
@@ -159,11 +168,24 @@ A signed public release, purchased signing identity or remote deployment is not 
 ```text
 Implement the Flamehorn Desktop MVP in D:\dev\flamehorn-desktop.
 
-Begin at docs/agent-brief-mvp.md and docs/README.md. Read all six owning
+Begin at docs/agent-brief-mvp.md, docs/README.md and
+docs/repo-development-contract.md. Read all six owning
 specifications and docs/design/mockups/README.md, inspect the full-size
 reference panels, and verify docs/baseline-manifest.json before making
 application changes. Use the approved revision set identified there.
 If the packet differs from the user's approved baseline, report the difference.
+
+Use separate feature/fix/docs branches from development and reviewed PRs
+back into development. As usable milestones are ready, review the exact
+development snapshot and promote only model-approved candidates to testing.
+Every testing push must add its permanent test note and update the testing
+index, then tell the user what changed, what works, how to start it, concrete
+test steps/expected results and known gaps. Confirm the remote publication
+and candidate tag before announcing it. Follow the contract's review gates.
+
+Keep main at its existing documentation baseline until the whole MVP is
+complete, the user has tested the exact candidate, and the user explicitly
+approves its promotion to main. Model approval is never that authorisation.
 
 Build the complete scope matrix in the brief as a packaged Windows 11 x64
 Electron/Svelte/Svelte Flow/TypeScript application with SQLite and managed
@@ -198,6 +220,7 @@ failed, blocked or untested.
 
 - [x] User accepted all recommendations in the six design drafts on 13 October 2026; FLAME-139–144 are complete as design issues.
 - [x] User named `D:\dev\flamehorn-desktop` and requested creation of the repository.
+- [x] User configured the GitHub remote and requested feature/development/testing/main gates plus per-testing-push updates; the linked repository contract records those requirements.
 - [x] Scope matrix preserves required semantic zoom, References, extraction and both providers; accepted exclusions are explicit.
 - [x] Original atlas identified as artwork 0.6 / Sites v8 / commit c971a92599bbc2e823b11af0de8c5bcc16d3231c; qualified local reference set supplied.
 - [x] Acceptance/evidence matrix references owning scenarios and distinguishes live from controlled checks.

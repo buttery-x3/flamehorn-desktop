@@ -1,6 +1,6 @@
 # Reconciliation and provenance audit
 
-Revision 1.0 · 13 October 2026 (Australia/Sydney)
+Revision 1.1 · 13 October 2026 (Australia/Sydney)
 
 ## Inspected sources
 
@@ -37,7 +37,7 @@ The historical Desktop draft and project overview are retained under `superseded
 
 Five technical approval editions retain the original rationale and detailed fixtures, with a top approval record superseding stale “draft/proposed/not approved” phrases. Their behavioral content is the accepted reviewed content. Older cross-revision labels identify the source drafts, not a competing baseline. Local canonical copies and the Linear technical mirrors share these approval editions.
 
-The current brief is a review artifact. Its final approval and later implementation go-ahead are distinct. Original Linear issue commissioning text remains historical remit; approved owning specs resolve scope. No future implementation ticket or remote Git URL has been fabricated.
+The current brief is a review artifact. Its final approval and later implementation go-ahead are distinct. Original Linear issue commissioning text remains historical remit; approved owning specs resolve scope. No future implementation ticket has been fabricated. The user subsequently configured origin as https://github.com/buttery-x3/flamehorn-desktop.git. The requested repository contract now keeps main at the original documentation baseline, integrates feature work on development, and publishes model-reviewed usable testing milestones with test notes before human acceptance for main.
 
 ## Verification limits
 
