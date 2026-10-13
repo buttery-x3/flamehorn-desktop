@@ -25,6 +25,7 @@ export class Credentials {
   private records:Record<string,Secret>={};
   private refreshes=new Map<string,Promise<string|undefined>>();
   private pending=false;
+  private unsaved=false;
   get signInPending(){return this.pending;}
   private readonly file:string;
   private readonly hostId:string;
@@ -38,8 +39,10 @@ export class Credentials {
     }
   }
   private save(){
+    this.unsaved=true;
     if(!safeStorage.isEncryptionAvailable())throw new Error('Protected credential storage is unavailable. No plaintext credentials were saved.');
     writeFileSync(this.file+'.pending',safeStorage.encryptString(JSON.stringify(this.records)),{mode:0o600});renameSync(this.file+'.pending',this.file);
+    this.unsaved=false;
   }
   status():CredentialStatus[]{return Object.values(this.records).map(r=>({id:r.id,label:r.label,kind:r.kind,connected:r.kind==='key'?!!r.key:!!r.accessToken&&!r.needsSignIn,planAllowed:r.kind==='chatgpt'?r.scopes?.includes('chatgpt.tokens.use.direct'):undefined}));}
   saveKey(key:string,origin:string,existingId?:string){
@@ -47,6 +50,9 @@ export class Credentials {
     this.records[record.id]=record;this.save();return record.id;
   }
   async token(recordId:string|undefined,origin:string):Promise<string|undefined>{
+    // A rotated token may exist in memory after a protected-store failure. Never
+    // publish it on a later request until its replacement refresh token is durable.
+    if(this.unsaved)this.save();
     if(!recordId)return;const record=this.records[recordId];if(!record)throw new Error('This connection needs credentials configured again.');
     if(record.kind==='key'){if(record.origin!==new URL(origin).origin)throw new Error('Provider origin changed. Deliberately re-enter its key.');return record.key;}
     if(new URL(origin).origin!=='https://api.openai.com')throw new Error('ChatGPT credentials cannot be sent to another origin.');

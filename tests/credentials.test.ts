@@ -5,14 +5,19 @@ import { randomUUID } from 'node:crypto';
 import { Credentials, validateCallback } from '../src/main/credentials';
 import { exportJWK, generateKeyPair, SignJWT } from 'jose';
 
-const fake=vi.hoisted(()=>({available:true,open:async(_url:string)=>{}}));
-vi.mock('electron',()=>({safeStorage:{isEncryptionAvailable:()=>fake.available,encryptString:(v:string)=>Buffer.from(v).reverse(),decryptString:(b:Buffer)=>Buffer.from(b).reverse().toString()},shell:{openExternal:(url:string)=>fake.open(url)}}));
+const fake=vi.hoisted(()=>({available:true,saveFails:false,open:async(_url:string)=>{}}));
+vi.mock('electron',()=>({safeStorage:{isEncryptionAvailable:()=>fake.available,encryptString:(v:string)=>{if(fake.saveFails)throw new Error('Controlled protected-store write failure');return Buffer.from(v).reverse();},decryptString:(b:Buffer)=>Buffer.from(b).reverse().toString()},shell:{openExternal:(url:string)=>fake.open(url)}}));
 const originalFetch=globalThis.fetch;
-beforeEach(()=>{fake.available=true;});afterEach(()=>{vi.unstubAllGlobals();});
+beforeEach(()=>{fake.available=true;fake.saveFails=false;});afterEach(()=>{vi.unstubAllGlobals();});
 function directory(){mkdirSync('artifacts/test-credentials',{recursive:true});return mkdtempSync(resolve('artifacts/test-credentials/fixture-'));}
 function seed(root:string,record:any){writeFileSync(join(root,'protected.bin'),Buffer.from(JSON.stringify({[record.id]:record})).reverse());return new Credentials(root);}
 const record=()=>({id:randomUUID(),kind:'chatgpt',label:'Synthetic account',clientId:'synthetic-issued-client',subject:'synthetic-subject',accessToken:'synthetic-expired-token',refreshToken:'synthetic-rotation-one',expiresAt:0,scopes:['chatgpt.tokens.use.direct']});
 describe('Credential boundary — synthetic records only, no live account',()=>{
+  it('never publishes an in-memory rotated token after a protected-save failure until persistence succeeds',async()=>{
+    const root=directory(),r=record(),credentials=seed(root,r);let calls=0;vi.stubGlobal('fetch',async()=>{calls++;return Response.json({access_token:'synthetic-rotated-token',refresh_token:'synthetic-rotated-refresh',token_type:'Bearer',expires_in:3600});});
+    fake.saveFails=true;await expect(credentials.token(r.id,'https://api.openai.com')).rejects.toThrow('protected-store');await expect(credentials.token(r.id,'https://api.openai.com')).rejects.toThrow('protected-store');expect(calls).toBe(1);
+    fake.saveFails=false;expect(await credentials.token(r.id,'https://api.openai.com')).toBe('synthetic-rotated-token');expect(await new Credentials(root).token(r.id,'https://api.openai.com')).toBe('synthetic-rotated-token');expect(calls).toBe(1);
+  });
   it('validates callback state, code and exact selected registration',()=>{
     const u=new URL('http://127.0.0.1/auth/callback?state=expected&client_id=issued&code=synthetic');expect(validateCallback(u,{state:'expected'})).toEqual({clientId:'issued',code:'synthetic'});
     expect(()=>validateCallback(u,{state:'wrong'})).toThrow('state');expect(()=>validateCallback(u,{state:'expected',clientId:'another'})).toThrow('registration');u.searchParams.set('error','access_denied');expect(()=>validateCallback(u,{state:'expected'})).toThrow('declined');
