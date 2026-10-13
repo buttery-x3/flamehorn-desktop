@@ -4,6 +4,8 @@ This is the running, newest-first history of usable candidates published to the 
 
 **Current candidate:** [2026-10-13-03](2026-10-13-03.md), the first desktop implementation preview. Exact promotion approval and verified remote publication are recorded in [PR #2](https://github.com/buttery-x3/flamehorn-desktop/pull/2). Main remains at its documentation baseline pending full verification and human acceptance.
 
+Later [live file/session evidence](../verification/live-files-session.md) supplements the same preserved candidate; it is a documentation update, not a new testing promotion.
+
 Each future testing push must add a dated [test note](TEMPLATE.md), an index entry below and a concise update in the implementation chat, under the [repository development contract](../repo-development-contract.md). Every candidate is pinned by an immutable `testing/YYYY-MM-DD-NN` tag and exact SHA in its promotion review.
 
 | Candidate / publication time (Australia/Sydney) | Main change / usable milestone | Test note | Review / promotion | Status |

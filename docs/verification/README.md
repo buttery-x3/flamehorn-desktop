@@ -17,6 +17,8 @@ Date: 13 October 2026 (Australia/Sydney, UTC+11). Platform: Windows 11 Pro x64, 
 | RT08–RT09, UI08–UI09, D1–D3 | Real Electron, delayed synthetic eight-output stream | Passed: three committed outputs survive Stop; recovery issues only five unfinished calls; original accepted plan reused; slot-six extraction omits seven siblings and makes no inference | `scripts/gallery-test.mjs`; gallery results and screenshots |
 | AP02–AP03, AP12, AP14 | User-authorised live ChatGPT registration, consent and discovery; public Responses endpoint | Passed: eligible plan permission, seven listed models, one `gpt-6-luna` response, expected non-private marker retained. 222 input / 11 output tokens reported. First attempt failed after the app closed before callback; a fresh attempt succeeded | Live provider record below |
 | AP06–AP08, AP14 | User's loopback `/v1`, Gemma model, no key | Passed: discovered requested model; one Responses and one Chat Completions fixture response completed and persisted. Responses reported 271 input / 8 output tokens; Chat usage unknown | Live provider record below |
+| AP09, F7, DA06 | Two separately authorized non-private file requests in preserved candidate 03 | Passed: `gpt-6-luna`, public Responses, User-role PNG and direct PDF; correct fixture outputs, one call each | [File/session addendum](live-files-session.md) |
+| AP04, AP12 | Real OAuth refresh using unchanged credential implementation; packaged disconnect/reconnect/restart | Passed: one exchange for concurrent callers, rotating replacement reopened from protected storage, model discovery HTTP 200; remote revocation confirmed; same registration reconnected and survived restart. Expiry timing was injected | [File/session addendum](live-files-session.md) |
 | Build / licences | Exact lockfile, clean clone/install, native rebuild, TypeScript/Svelte validation, Forge x64 package, dependency audit | Passed: check has zero errors/warnings; 68 unit tests across seven files; native SQLite/PDF work in package; 32 runtime package notices collected; production audit reports zero vulnerabilities | Source scripts, lockfile, `dependencies.json`, testing note |
 
 The named scenario ranges identify related contracts, not a claim that every possible variant of every scenario was independently tested. Controlled model output proves orchestration and durability, not model quality or real provider capability. Usage that is absent remains unknown.
@@ -31,14 +33,15 @@ Both checks were explicitly authorised in the implementation chat. Only non-priv
 - Raw local harness records stay under ignored `artifacts/live/`. Public evidence contains no account identity, token, callback code, host registration identity or complete private model catalogue.
 - The protected ChatGPT session reopened in the packaged candidate and metadata discovery still listed the selected model. All three recorded fixture outputs survived restart, and no additional inference was sent. This does not prove live token expiry or rotation; the protected record's modification time remained at sign-in.
 - A clean local clone completed `npm ci`, native rebuild and production build with the same renderer asset hashes. Ordinary packaged startup was also checked without debugger flags, including a forced stop/restart of a disposable fixture library. These are on the implementation machine, not a second pristine Windows installation.
+- Later authorized checks on the same preserved candidate passed for a small PNG and a direct one-page PDF, User role, `gpt-6-luna`. Real refresh/rotation, remote revocation, reconnect and protected-session restart also passed; refresh used an injected in-memory expiry boundary. See the [dated addendum](live-files-session.md) for exact methods and limits. The earlier text-only record above remains historical evidence.
 
 ## Remaining verification gates
 
 | Check | Status / consequence |
 | --- | --- |
-| Live access-token expiry/refresh rotation and remote revocation | Not tested live; controlled protocol/identity tests pass. Do not describe these as live-verified |
-| Live image/PDF inference for an exact route/model/role | Not tested; import, preview, byte identity, deliberate PDF representation and capability blocking are exercised locally. Unknown modalities remain blocked |
-| Local overflow rejection configuration | Not verified. Server build and model/quantization/context were observed; complete-context preservation at provider limits remains uncertain |
+| Natural access-token expiry | Real refresh/rotation passed with injected expiry timing; remote revocation, same-registration reconnect and packaged restart passed. Waiting through natural expiry in the packaged UI remains untested |
+| Live image/PDF inference beyond the tested fixtures | User-role PNG and direct one-page PDF passed on `gpt-6-luna` through public Responses. Other models, Assistant assets, local-model vision and complex files remain unverified |
+| Local overflow rejection configuration | Not verified. Saved model settings and loaded-model metadata confirm 20,319 context tokens but contain no explicit overflow policy; complete-context preservation at provider limits remains uncertain |
 | Pristine second Windows 11 machine, display scaling and hardware variety | Not tested; packaged launch/relaunch/native modules pass on the implementation machine |
 | Human end-to-end acceptance of exact candidate | Pending. Main must stay at its documentation baseline |
 
