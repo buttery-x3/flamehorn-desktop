@@ -1,0 +1,111 @@
+{
+  "candidate": "2026-10-13-03",
+  "candidateSha": "91dc4db562e3dbd0634eb420559e9b99a059cff7",
+  "runtimeSource": "d818295a1d2e3e05465c78d6b47717320855c2ae",
+  "authorization": "Explicit user approval in the implementation chat: two non-private file requests plus renewal and disconnect/reconnect.",
+  "imageAndPdf": {
+    "startedAt": "2026-10-13T07:57:23.125Z",
+    "finishedAt": "2026-10-13T07:57:37.725Z",
+    "checks": [
+      {
+        "attempted": true,
+        "attemptedAt": "2026-10-13T07:57:27.270Z",
+        "model": "gpt-6-luna",
+        "route": "https://api.openai.com/v1/responses",
+        "role": "user",
+        "representation": "image",
+        "fixture": "shape.png",
+        "bytes": 1584,
+        "sha256": "1ac18793cecc51663ceb664de354015c0bf02bd49e2a6e22c178ee8872424463",
+        "warnings": [
+          "shape.png: visual token estimate is unknown.",
+          "shape.png: modality support is user-declared, not verified.",
+          "Context size is unknown; fit cannot be guaranteed.",
+          "This route has no configured hard output-token cap. Local time and byte ceilings are not a spend cap."
+        ],
+        "state": "Completed",
+        "elapsedMs": 3794,
+        "calls": 1,
+        "output": "Blue circle",
+        "fixtureMatched": true,
+        "usage": [
+          {
+            "inputTokens": 240,
+            "outputTokens": 6,
+            "totalTokens": 246
+          }
+        ]
+      },
+      {
+        "attempted": true,
+        "attemptedAt": "2026-10-13T07:57:31.637Z",
+        "model": "gpt-6-luna",
+        "route": "https://api.openai.com/v1/responses",
+        "role": "user",
+        "representation": "pdf",
+        "fixture": "marker.pdf",
+        "bytes": 583,
+        "sha256": "4a22869fe20acc90afef12a7b022a559263463b3d20365370addf1f666742ce6",
+        "warnings": [
+          "marker.pdf: visual token estimate is unknown.",
+          "marker.pdf: modality support is user-declared, not verified.",
+          "Context size is unknown; fit cannot be guaranteed.",
+          "This route has no configured hard output-token cap. Local time and byte ceilings are not a spend cap."
+        ],
+        "state": "Completed",
+        "elapsedMs": 6024,
+        "calls": 1,
+        "output": "PDF_OK_731",
+        "fixtureMatched": true,
+        "usage": [
+          {
+            "inputTokens": 258,
+            "outputTokens": 8,
+            "totalTokens": 266
+          }
+        ]
+      }
+    ]
+  },
+  "renewal": {
+    "startedAt": "2026-10-13T07:58:42.663Z",
+    "attempted": true,
+    "timing": "in-memory expiry boundary injected; real OAuth endpoint",
+    "originalExpiresAt": "2026-10-13T08:10:41.675Z",
+    "exchanges": 1,
+    "concurrentCallersReceivedSameToken": true,
+    "refreshRotated": true,
+    "accessReplaced": true,
+    "mappingPreserved": true,
+    "protectedReplacementReopened": true,
+    "newExpiresAt": "2026-10-13T08:58:44.149Z",
+    "discoveryHttpStatus": 200,
+    "selectedModelStillListed": true,
+    "state": "Passed",
+    "additionalInferenceCalls": 0,
+    "finishedAt": "2026-10-13T07:58:45.652Z",
+    "credentialSourceGitBlob": "0f1ab870c4ed0fae5d1cbc37c1067e6e82d602f3",
+    "execution": "Unchanged product Credentials class bundled into a separate Electron 44.7.0 main-process harness; packaged app closed; same verification-only protected store."
+  },
+  "reconnect": {
+    "startedAt": "2026-10-13T07:59:41.737Z",
+    "candidate": "2026-10-13-03",
+    "additionalInferenceCalls": 0,
+    "disconnectAttempted": true,
+    "remoteRevocationConfirmed": true,
+    "disconnectMessage": "Disconnected.",
+    "localDisconnected": true,
+    "reconnectStartedAt": "2026-10-13T07:59:43.389Z",
+    "sameRegistration": true,
+    "sameProfile": true,
+    "planPermission": true,
+    "connected": true,
+    "accountCountUnchanged": true,
+    "hostIdentityPreserved": true,
+    "selectedModelListed": true,
+    "connectedAfterRestart": true,
+    "fileResultsRetained": true,
+    "state": "Passed",
+    "finishedAt": "2026-10-13T08:06:26.664Z"
+  }
+}
